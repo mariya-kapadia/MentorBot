@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Career FAQ Chatbot</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.16/build/spline-viewer.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+
+</head>
+
+<body>
+    <div class="app-wrapper">
+        <div class="top-left-title">
+            <img src="logo.webp" alt="MentorBot Logo" class="bot-logo" />
+            <div>
+                <h1>MentorBot</h1>
+                <p>AI-Powered Career Mentorship</p>
+            </div>
+        </div>
+
+
+
+        <div class="chat-container">
+
+
+            <div class="header-buttons">
+                <button id="show-history">History</button>
+                <button id="clear-history">Clear</button>
+            </div>
+
+
+
+            <div id="chat-box" class="chat-box">
+                <div class="welcome-screen" id="welcome-screen">
+
+                   <img src="avatar.webp" alt="Bot Avatar" class="welcome-avatar">
+
+
+
+
+                    <div class="welcome-text">
+                        <h3>MentorBot</h3>
+                        <p>How can I guide you today?</p>
+                    </div>
+
+                    <!-- FAQ Suggestions -->
+                    <div class="faq-container" id="faq-container">
+                        <button class="faq-btn">What skills are in demand in 2026?</button>
+                        <button class="faq-btn">What are the highest paying careers in india?</button>
+                        <button class="faq-btn">How to prepare for campus placements?</button>
+                        <button class="faq-btn">Which portals are best to find internships?</button>
+                    </div>
+
+                </div>
+
+                <!-- messages will appear here -->
+            </div>
+
+            <div class="input-area">
+                <input type="text" id="user-input"
+                    placeholder="Ask me anything about internships, careers or skills..." />
+                <button id="send-btn">Send</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script defer src="script.js"></script>
+</body>
+
+</html>
